@@ -47,7 +47,7 @@ Iss pawan dihade ki aapko bahut bahut badhai ho + duniya jahaan ki saari generic
 Happy to You 🎂. Love you 💞.See you soon 💨`,
   "Gaurav Thapar":`Happiest birthday Aastha❤️🎉  God bless you with all the pizzas and RB in life 🍕🍻. I hope next year we can go to so many trips to mountains and beaches 👻. ""Country roads , take me home 😎"". 
 Kabhi socha tha march mein ki ye Birthday quarantined birthday hoga ? 😂. God bless us all 💞🤞.`,
-  "Ayush":`Happiest Birthday Mottooo, pampered jhalliyeee 🤪💖. Hope you have a kick vala hattke-jhattke vala mastttt day. Take care & See yaa soonnnn 🍾♥️`,
+  "Ayush":"Happiest Birthday Mottooo, pampered jhalliyeee 🤪💖. Hope you have a kick vala hattke-jhattke vala mastttt day. Take care & See yaa soonnnn 🍾♥️ ",
   "Anuj": `Hey Aastha !! Happy Birthday to the most adorable chota sa bacha .....Stay Blessed & Enjoy this new phase your life (Post-Teen)....hshxhcndjjdbxncjfjd nkdldhdhdhdb  <3`,
   "Sujay Bansal": `Soo a day has come when someone amazing is born. A great day to be happy and to be celebrated. Hope this finds you in best of your health.
 A Very happy birthday to you Aastha. Hope to see you growing every single year with joy. One to whom I shared my important life years. Enjoyed every moment being with you. Listing to amazing music playlist by you one i miss the most. Missing all those big and little parties we all enjoyed with you. 
@@ -125,7 +125,7 @@ function showMsg(event) {
   people.innerHTML = ["<option value=''>Choose</option>",...randomValues].join("");
   const result = document.getElementById("result");
   result.innerHTML = "";
-  content.innerHTML = wishes[event.currentTarget.dataset.person];
+  content.textContent = wishes[event.currentTarget.dataset.person];
   new Custombox.modal({
     content: {
       effect: "blur",
@@ -141,7 +141,7 @@ function checkPerson() {
 
   const content = document.getElementById("content");
   const result = document.getElementById("result");
-  if (wishes[people.value] === content.innerHTML) {
+  if (wishes[people.value] === content.textContent) {
     result.innerHTML = "Good job.🎈🥳";
   } else {
     result.innerHTML = "Wrong. Shame Shame. 😝";
